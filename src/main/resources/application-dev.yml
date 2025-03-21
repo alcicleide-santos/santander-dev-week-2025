@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:sdw2025
+    username: sdw2025
+    password: # Deixe em branco ou adicione uma senha, se necessário
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create  # opções válidas: validate | update | create | create-drop
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
